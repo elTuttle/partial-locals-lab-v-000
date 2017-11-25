@@ -19,7 +19,11 @@ class Student < ActiveRecord::Base
     if name == ''
       Student.all
     else
-      
+      Student.all.each do |student|
+        if student.name.contain?(name)
+          student_array << student
+        end
+      end
     end
   end
 
