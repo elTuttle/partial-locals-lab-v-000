@@ -15,10 +15,11 @@ class Student < ActiveRecord::Base
   has_many :classrooms, through: :classroom_students
 
   def self.search(name)
+    student_array = []
     if name == ''
       Student.all
     else
-      Student.find_by(name: name)
+      
     end
   end
 
