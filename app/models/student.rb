@@ -24,6 +24,7 @@ class Student < ActiveRecord::Base
           student_array << student
         end
       end
+      student_array
     end
   end
 
