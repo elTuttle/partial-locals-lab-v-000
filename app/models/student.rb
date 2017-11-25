@@ -16,10 +16,10 @@ class Student < ActiveRecord::Base
 
   def self.search(name)
     if name == ''
-      Student.all 
+      Student.all
     else
-      Student.find(name)    
+      Student.find(name)
     end
   end
-  
+
 end
